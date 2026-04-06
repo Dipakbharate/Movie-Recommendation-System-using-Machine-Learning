@@ -1,76 +1,91 @@
-🎬 Movie Recommendation Engine (Content-Based)
-🚀 Overview
+# 🎬 Movie Recommendation Engine (Content-Based)
 
-This project is a Content-Based Movie Recommendation System that suggests similar movies based on user preferences and movie metadata such as genres, cast, and keywords.
+## 🚀 Overview
+This project is a **Content-Based Movie Recommendation System** that suggests similar movies based on user preferences and movie metadata such as **genres, cast, and keywords**.
 
-The system leverages Natural Language Processing (NLP) and cosine similarity to compute similarity scores and recommend the top 5 relevant movies.
+The system leverages **Natural Language Processing (NLP)** and **cosine similarity** to compute similarity scores and recommend the **top 5 relevant movies**.
 
-💡 Problem Statement
+---
 
-With thousands of movies available, users often struggle to find relevant content.
-This system helps users discover movies similar to their interests using data-driven recommendations.
+## 💡 Problem Statement
+With thousands of movies available, users often struggle to find relevant content.  
+This system helps users discover movies similar to their interests using **data-driven recommendations**.
 
-🧠 Key Features
-🔍 Recommend top 5 similar movies instantly
-🎭 Uses metadata like genres, cast, and keywords
-⚡ Fast response time (< 2 seconds)
-🌐 Fetches real-time movie details using TMDB API
-🧹 Data preprocessing and feature engineering for better accuracy
-🛠️ Tech Stack
+---
 
+## 🧠 Key Features
+- 🔍 Recommend top 5 similar movies instantly  
+- 🎭 Uses metadata like genres, cast, and keywords  
+- ⚡ Fast response time (< 2 seconds)  
+- 🌐 Fetches real-time movie details using TMDB API  
+- 🧹 Data preprocessing and feature engineering for better accuracy  
 
-Programming Language: Python
-Libraries: Pandas, NumPy, Scikit-learn
-NLP Technique: CountVectorizer (Bag of Words)
-Similarity Measure: Cosine Similarity
-API Integration: TMDB API
-Visualization (optional): Matplotlib / Seaborn
+---
 
+## 🛠️ Tech Stack
 
-⚙️ How It Works
-📥 Data Collection
-Movie dataset with metadata (genres, cast, keywords)
+- **Programming Language:** Python  
+- **Libraries:** Pandas, NumPy, Scikit-learn  
+- **NLP Technique:** CountVectorizer (Bag of Words)  
+- **Similarity Measure:** Cosine Similarity  
+- **API Integration:** TMDB API  
+- **Visualization (optional):** Matplotlib / Seaborn  
 
-🧹 Data Preprocessing
-Handling missing values
-Combining relevant features into a single text column
+---
 
-🧠 Feature Extraction
-Applied CountVectorizer to convert text into vectors
+## ⚙️ How It Works
 
-📊 Similarity Computation
-Used cosine similarity to calculate similarity scores
+### 📥 Data Collection
+- Movie dataset with metadata (genres, cast, keywords)
 
-🎯 Recommendation
-Sorted similarity scores
-Returned Top 5 similar movies
+### 🧹 Data Preprocessing
+- Handling missing values  
+- Combining relevant features into a single text column  
 
-📌 Example
-Input:
+### 🧠 Feature Extraction
+- Applied **CountVectorizer** to convert text into vectors  
+
+### 📊 Similarity Computation
+- Used **cosine similarity** to calculate similarity scores  
+
+### 🎯 Recommendation
+- Sorted similarity scores  
+- Returned **Top 5 similar movies**  
+
+---
+
+## 📌 Example
+
+**Input:**  
 Movie: Avengers
-Output:
-
-1. Iron Man
-2. Captain America: The First Avenger
-3. Thor
-4. Guardians of the Galaxy
-5. Doctor Strange
-
-   
-📈 Performance
-⚡ Recommendation response time: < 2 seconds
-📊 Efficient similarity computation using vectorization
-✅ Scalable for large movie datasets
 
 
+**Output:**  
+Iron Man
+Captain America: The First Avenger
+Thor
+Guardians of the Galaxy
+Doctor Strange
 
-🔗 API Integration
-Integrated TMDB API to fetch:
-Movie posters
-Ratings
-Additional details
+---
 
-📂 Project Structure
+## 📈 Performance
+- ⚡ Recommendation response time: **< 2 seconds**
+- 📊 Efficient similarity computation using vectorization
+- ✅ Scalable for large movie datasets
+
+---
+
+## 🔗 API Integration
+Integrated **TMDB API** to fetch:
+- Movie posters  
+- Ratings  
+- Additional details  
+
+---
+
+## 📂 Project Structure
+
 ├── data/
 ├── notebooks/
 ├── app.py / main.py
@@ -79,8 +94,11 @@ Additional details
 └── README.md
 
 
+---
 
-🖥️ How to Run Locally
+## 🖥️ How to Run Locally
+
+---
 # Clone the repository
 git clone https://github.com/your-username/movie-recommendation-system.git
 
@@ -92,9 +110,6 @@ pip install -r requirements.txt
 
 # Run the application
 python app.py
-
-
-
 🎯 Future Improvements
 ✅ Add collaborative filtering
 ✅ Deploy as a web application
