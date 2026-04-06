@@ -17,31 +17,37 @@ This system helps users discover movies similar to their interests using data-dr
 🌐 Fetches real-time movie details using TMDB API
 🧹 Data preprocessing and feature engineering for better accuracy
 🛠️ Tech Stack
+
+
 Programming Language: Python
 Libraries: Pandas, NumPy, Scikit-learn
 NLP Technique: CountVectorizer (Bag of Words)
 Similarity Measure: Cosine Similarity
 API Integration: TMDB API
 Visualization (optional): Matplotlib / Seaborn
+
+
 ⚙️ How It Works
 📥 Data Collection
 Movie dataset with metadata (genres, cast, keywords)
+
 🧹 Data Preprocessing
 Handling missing values
 Combining relevant features into a single text column
+
 🧠 Feature Extraction
 Applied CountVectorizer to convert text into vectors
+
 📊 Similarity Computation
 Used cosine similarity to calculate similarity scores
+
 🎯 Recommendation
 Sorted similarity scores
 Returned Top 5 similar movies
+
 📌 Example
-
 Input:
-
 Movie: Avengers
-
 Output:
 
 1. Iron Man
@@ -49,15 +55,21 @@ Output:
 3. Thor
 4. Guardians of the Galaxy
 5. Doctor Strange
+
+   
 📈 Performance
 ⚡ Recommendation response time: < 2 seconds
 📊 Efficient similarity computation using vectorization
 ✅ Scalable for large movie datasets
+
+
+
 🔗 API Integration
 Integrated TMDB API to fetch:
 Movie posters
 Ratings
 Additional details
+
 📂 Project Structure
 ├── data/
 ├── notebooks/
@@ -65,6 +77,9 @@ Additional details
 ├── similarity.pkl
 ├── movies.pkl
 └── README.md
+
+
+
 🖥️ How to Run Locally
 # Clone the repository
 git clone https://github.com/your-username/movie-recommendation-system.git
@@ -77,6 +92,9 @@ pip install -r requirements.txt
 
 # Run the application
 python app.py
+
+
+
 🎯 Future Improvements
 ✅ Add collaborative filtering
 ✅ Deploy as a web application
